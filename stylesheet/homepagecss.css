@@ -1,0 +1,275 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 23, 2018, 11:22:52 PM
+    Author     : Kho Wei Syen
+*/
+
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#777;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+/*parallax effect*/
+ .parallax-one, .parallax-two, .parallax-three,.parallax-top
+ {
+    /*Parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.90;
+    position: relative;
+    
+ 
+
+}
+ 
+.parallax-top
+{
+    
+    background-image: url("welcome.jpg");
+    background-size: cover;
+    min-height: 100%;
+    width: 500%;
+    
+ 
+}
+
+
+
+.panel .inner {
+    display: table-cell;
+   
+}
+
+.backgroundimg{
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height:100%;
+    width: 200%;
+
+}
+
+#back1 {
+    background: url("veeco2.jpg") no-repeat;
+    background-size:1900px 1000px;
+    width:200%;
+
+}
+
+#back2 {
+    background: url("veeco3.jpg") no-repeat ;
+    background-size:1900px 1000px;
+    width:200%;
+
+}
+
+#back3 {
+    background: url("veeco4.jpg") no-repeat ;
+    background-size:1900px 1000px;
+    width:200%;
+}
+
+
+@keyframes backgroundchangeFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes backgroundchangeFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+#backgroundchange div:nth-of-type(1) {
+  animation-delay: 18s;
+  -webkit-animation-delay: 18s;
+}
+#backgroundchange div:nth-of-type(2) {
+  animation-delay: 22s;
+  -webkit-animation-delay: 22s;
+}
+#backgroundchange div:nth-of-type(3) {
+  animation-delay: 24s;
+  -webkit-animation-delay: 24s;
+}
+
+
+#backgroundchange div {
+animation-name: backgroundchangeFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 20s;
+
+-webkit-animation-name: backgroundchangeFadeInOut;
+-webkit-animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-duration: 20s;
+
+}
+
+
+/*parallax effect*/
+
+ 
+.parallax-one
+{
+    
+    background-image: url("aboutus.jpg");
+    min-height: 70%;
+ 
+}
+
+.parallax-two{
+    background-image: url("aboutus2.jpg");
+    min-height: 400px;
+ 
+}
+
+.parallax-three{
+    background-image: url("aboutus3.jpg");
+    min-height: 400px;
+}
+        
+
+
+.ptext{
+    
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+/*portfolio */
+.h2
+{
+    text-align:center;
+}
+
+.p
+{
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+/*contact section*/
+
+.w3-container,.h3
+{
+    text-align: center;
+    font-size: large;
+    alignment-adjust: central;
+}
+
+.w3-container,.h4
+{
+    font-weight: bold;
+}
+
+.w3-container
+{
+    font-style: inherit;
+    font-weight: bold;
+    font-size: large;
+    
+    
+}
+
+/*footer*/
+footer,.p
+{
+    background-color: #333333;
+    text-align: center;
+}
+
+
+/*form*/
+form
+{
+    position:relative;
+    margin:auto;
+    text-align: center;
+    height:200px;
+}
+
+#SlideShowContainer {
+   position: fixed;
+   z-index: 0;
+   top: 0; right: 0; bottom: 0; left: 0;
+}
+
+#AllOtherContentWrapper {
+   position: relative; /* this could be absolute depending on application*/
+   z-index: 1;
+}
